@@ -1,0 +1,22 @@
+{
+  "name": "Starter-Gulp",
+  "version": "0.0.0",
+  "description": "First step of strater",
+  "dependencies": {
+    "gsap": "^1.18.0",
+    "jquery": "^2.1.4",
+    "normalize.css": "^3.0.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.4.1"
+  }
+}
