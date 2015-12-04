@@ -1,0 +1,47 @@
+$font-Title : 'Oswald';
+$font-corps : 'Open Sans';
+// $font-thin : 'Oswald';
+// $font-lite : 'Open Sans';
+$color-main : #005388;
+$color-main-lite : #6ca9d0;
+$grey : #b8b7b7;
+$grey-purple : #a28c92;
+$grey-dark : #474645;
+$right : 2%;
+
+$mobile : 767px;
+$tablet : 1024px;
+
+$rightMobile : 5%;
+$rightTablet : 2%;
+$rightDesktop : 3%;
+
+$paddingMobile : 10%;
+$paddingTablet : 15%;
+$paddingDesktop : 20%;
+
+$duration : 0.4s;
+
+@mixin right-margin($property) {
+     @media (min-width: $mobile) and (max-width: $tablet) {
+         #{$property}: $rightTablet;
+     }
+     @media (max-width: $mobile) {
+         #{$property} : $rightMobile;
+     }
+     @media (min-width: $tablet) {
+         #{$property} : $rightDesktop;
+     }
+}
+
+@mixin lateral-padding {
+     @media (min-width: $mobile) and (max-width: $tablet) {
+         padding: 0 $paddingTablet;
+     }
+     @media (max-width: $mobile) {
+         padding : 0 $paddingMobile;
+     }
+     @media (min-width: $tablet) {
+         padding : 0 $paddingDesktop;
+     }
+}
